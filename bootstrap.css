@@ -1,0 +1,257 @@
+.chinesefont{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 15px;
+    letter-spacing: 3px;
+}
+h1,h3,h4,h5,li,p,a{
+    font-family: 'Noto Sans TC', sans-serif;
+    letter-spacing: 2.5px;
+}
+.nav-item a:hover{
+    color: #005780;
+    transform: scale(1.1);
+}
+.container{
+    max-width: 888px;
+}
+
+#intro .jumbotron{
+    height: 55vh;
+    margin-bottom: 0px;
+    background:
+        linear-gradient(120deg, #D0D3D9 30% , transparent, #D0D3D9 95%) ,
+        url("./字體呈現2_工作區域\ 1.svg") no-repeat right ;
+    background-size: cover;
+}
+#intro h1{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 0.25;
+    margin-bottom: 25px;
+    color: #005780;
+
+}
+#intro h2{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #005780;
+}
+#intro .btn{
+    background-color: #005780;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    transition: 0.5s;
+}
+#intro .btn:hover{
+    background-color: #fff;
+    color: #005780;
+}
+header nav img{
+    width: 60px;
+
+}
+header li{
+    margin: 0px 18px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+#second{
+    padding: 50px 0px;
+    vertical-align: middle;
+
+}
+h2{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+
+#second h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    
+}
+#second p{
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+#third{
+    display: none;
+    padding: 50px 0px;
+}
+#third img{
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+#third h4{
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+
+}
+p{
+    text-align: justify;
+    text-justify: inter-ideograph;
+    font-weight: 400;
+    margin-top: 5px;
+}
+#intro_about h3{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+#fourth{
+    margin: 0px;
+    padding: 50px;
+    list-style: none;
+}
+#fourth h2{
+    margin-bottom: 40px;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+}
+.item_1{
+    width: 33%;
+    position: relative;
+    display: inline-flex;
+}
+.item_1 img{
+    width: 100%;
+    vertical-align: middle;
+    
+}
+
+.item_text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .3s;
+}
+
+#fourth img:hover{
+    transform: scale(1.1);
+}
+
+.item_text:hover {
+    opacity: 1;
+}
+.item_1 h4{
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+.item_1 p{
+    font-size: 14px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 500;
+    color: #fff;
+}
+
+
+#fifth .btn1{
+    background-color: #005780;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid transparent;
+    font-family: inherit;
+}
+
+#fifth .col-8{
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: left;
+}
+#fifth .text-5{
+    position: absolute;
+    top: 100px;
+}
+
+#six .carouseltext{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: opacity .3s;
+
+}
+#six{
+    padding: 50px;
+}
+#six .carouseltext:hover{
+    opacity: 1;
+}
+#six img{
+    z-index: 1;
+}
+#six h4{
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+    color: #fff;
+    z-index: 2;
+}
+#fifth_one .col-4{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#fifth_one .one{
+    height: 319px;
+    padding: 0px;
+    background-image: url(./First_Edit_工作區域\ 1.svg);
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position:center;
+}
+#fifth_one .one:hover{
+    height: 319px;
+    padding: 0px;
+    background-image: url(./Second_Edit_工作區域\ 1.svg);
+    background-repeat:no-repeat;
+    background-size:auto;
+    background-position:center;
+}
+#fifth_one .col-8{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+#fifth_one .text-5{
+    display: table-cell;
+    vertical-align: middle;
+}
+#fifth_one .text-5-1{
+    font-weight: 600;
+    color: #022340;
+}
+#fifth_one .text-5-2{
+    font-weight: 600;
+    color: #597b83;
+}
