@@ -1,0 +1,538 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.flex_set {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* typography */
+h1 {
+  font-size: 28px;
+  color: #e0a866;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 20px;
+  color: #271f1f;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 700;
+}
+
+h2.light {
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 16px;
+  color: #271f1f;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 500;
+}
+p {
+  font-size: 14px;
+  color: #271f1f;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 400;
+}
+
+.section {
+  height: calc(100vh - 60px);
+}
+
+/* 導覽列 */
+.nav {
+  background-color: #e0a866;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0% 10%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+}
+
+.list {
+  width: 50%;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav_dash {
+  height: 35px;
+  width: 2px;
+  background-color: #271f1f;
+  display: inline-block;
+}
+
+/* banner標題特別處理 */
+.list h2 {
+  display: inline-block;
+  line-height: 35px;
+}
+
+/*#region banner */
+/* banner */
+#banner,
+.owl-carousel,
+.owl-theme {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: antiquewhite;
+}
+
+/* owl-carousel setting  */
+
+.owl-nav {
+  display: none;
+}
+.owl-dots {
+  position: absolute;
+  bottom: 5vh;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.owl-theme .owl-dots .owl-dot span {
+  background-color: #ffffff;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: #e0a866;
+}
+
+.item {
+  width: 100%;
+  height: 100vh;
+}
+
+/* banner img */
+
+.img_block {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.img_block h3 {
+  font-weight: thin;
+}
+
+#b_img_1 {
+  background-image: url("../img/stalker.jpeg");
+}
+#b_img_2 {
+  background-image: url("../img/2001_space_odyssey.jpeg");
+  background-position: -10%;
+}
+
+#b_img_2 h3 {
+  color: #e0a866;
+  font-weight: thin;
+}
+
+#b_img_3 {
+  background-image: url("../img/the_mood_of_love.jpeg");
+}
+
+#b_img_4 {
+  background-image: url("../img/the_seventh_seal.jpeg");
+}
+
+#b_img_4 h3 {
+  color: #e0a866;
+}
+
+#b_img_5 {
+  background-image: url("../img/ran.jpeg");
+}
+
+.banner_block {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  padding: 7.5% 10%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.banner_film_info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.banner_film_info h3 {
+  font-size: 25px;
+  color: #ffffff;
+  font-weight: 300;
+  border-bottom: 2px #e0a866 solid;
+}
+.banner_title {
+  margin-top: 37.5%;
+  background-color: #e0a866;
+  width: 400px;
+  height: 55px;
+}
+.banner_title h2 {
+  font-size: 40px;
+  color: #ffffff;
+}
+/*#endregion */
+
+/*#region filter */
+
+#filter {
+  width: 100%;
+  height: calc(100vh - 60px);
+  padding: 5% 10%;
+  z-index: 4;
+}
+
+#city_select {
+  position: relative;
+  width: 200px;
+  height: 40px;
+  background-color: #ffffff;
+  border: 3px solid #271f1f;
+}
+#filter_select {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.filter_s_b {
+  margin-right: 15px;
+}
+
+#city_icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 37px;
+  height: 34px;
+  background-color: #271f1f;
+  z-index: 2;
+}
+/* result */
+#container {
+  overflow: scroll;
+  overflow-y: scroll;
+  height: 55vh;
+  width: 100%;
+  padding: 2.5%;
+  border: #e0a866 2px solid;
+  border-radius: 2vh;
+}
+
+.filter_block {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  margin-bottom: 20px;
+}
+.filter_block:last-child {
+  margin-bottom: 0;
+}
+
+.filter_mid {
+  width: calc(100% - 45px);
+  height: 100%;
+  border-top: 2px solid #271f1f;
+  border-bottom: 2px solid #271f1f;
+  padding: 2.5%;
+}
+.filter_img {
+  height: 120px;
+}
+
+/* 舊block  */
+.old_block {
+  width: 100%;
+  height: 120px;
+  padding: 27px 48px;
+  border: 2px solid #271f1f;
+  margin-bottom: 20px;
+}
+
+/* 片名 */
+.filter_b_i {
+  width: 45%;
+  margin-right: 2.5%;
+}
+/* 影廳 */
+.filter_b_s {
+  width: 22.5%;
+  margin: 0px 3.5%;
+}
+/* 時間 */
+.filter_b_t {
+  width: 17.5%;
+  margin: 0px 2.75%;
+  flex-direction: column;
+}
+/* black line */
+.filter_dash {
+  height: 80px;
+  width: 2px;
+  background-color: #271f1f;
+}
+.fa-location-dot {
+  color: #e0a866;
+  font-size: 30px;
+  margin-right: 12px;
+}
+
+.fa-heart {
+  font-size: 40px;
+}
+
+.fa-heart:hover {
+  color: #e0a866;
+  cursor: pointer;
+}
+
+.fa-solid {
+  color: #e0a866;
+  font-size: 40px;
+}
+/*#endregion */
+
+/*#region auto-selected*/
+#auto_selected {
+  width: 100%;
+  height: 100vh;
+  padding: 5% 10%;
+  flex-direction: row;
+}
+#auto_selected .flex_set {
+  width: 100%;
+  height: 100%;
+}
+
+#selected_poster {
+  width: 350px;
+  height: 500px;
+  background-color: #979797;
+  margin-right: 100px;
+}
+.selected_text {
+  width: 400px;
+  height: 40%;
+}
+
+.selected_text h1 {
+  font-size: 40px;
+}
+#selected_btn {
+  background-color: #271f1f;
+  width: 150px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+}
+#selected_btn h2 {
+  color: #ffffff;
+}
+.s_title_style {
+  font-size: 40px;
+  color: #271f1f;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: thin;
+}
+
+.s_sub_style {
+  font-size: 30px;
+  color: #271f1f;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: medium;
+  margin-bottom: 80px;
+}
+
+/*#endregion */
+
+/*#region review*/
+#review {
+  height: 100vh;
+  width: 100%;
+  padding: 5% 10%;
+}
+.review_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+#review h1 {
+  color: #271f1f;
+}
+
+.main_review {
+  width: 67.5%;
+  height: 100%;
+  border: #e0a866 1.75px solid;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+#main_text {
+  width: 57.5%;
+}
+
+#writer {
+  justify-content: start;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#writer_img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  display: inline-block;
+  background-image: url("../img/writer_main.jpeg");
+  background-size: cover;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
+#writer_name {
+  display: inline-block;
+}
+#writer_name h2 {
+  color: #e0a866;
+}
+#writer_name h3 {
+  font-weight: thin;
+  margin-top: 2.5px;
+}
+
+#main_text p {
+  width: 100%;
+  line-height: 1.5rem;
+}
+
+#main_more_block {
+  justify-content: space-between;
+  height: 40px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#main_more_block img {
+  height: 100%;
+}
+#main_line {
+  width: 70%;
+  height: 2px;
+  background-color: #e0a866;
+}
+
+#main_btn {
+  width: 22.5%;
+  height: 100%;
+}
+#main_btn:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#main_btn div {
+  height: 40px;
+  width: calc(100% - 6.91px * 2);
+  background-color: #e0a866;
+  text-align: center;
+  line-height: 40px;
+}
+
+/* 海報 */
+
+#main_poster {
+  width: 40%;
+}
+#main_poster h3 {
+  color: #e0a866;
+  font-weight: thin;
+  text-align: center;
+}
+
+#main_poster img {
+  width: 100%;
+}
+
+/* side block */
+.side_review {
+  height: 100%;
+  width: 30%;
+}
+
+.side_block {
+  border: #e0a866 1.75px solid;
+  height: 150px;
+  width: 100%;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  transition: all ease-in-out 0.2s;
+}
+
+.side_block:hover {
+  transform: translateY(-5px);
+  transition: all ease-in-out 0.2s;
+  cursor: pointer;
+  box-shadow: 0px 2px 3px 1px #e0a7667e;
+}
+.side_block h2 {
+  color: #271f1f;
+}
+
+.side_block div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.side_block h2.light {
+  display: inline;
+}
+.side_block h2.light:first-child {
+  color: #e0a866;
+}
+
+/*#endregion */
+
+#fp-nav ul li a span {
+  background-color: #e0a866;
+}
+
+#fp-nav ul li .fp-tooltip {
+  color: #e0a866;
+}
+
+.fp-watermark {
+  display: none;
+}
