@@ -52,9 +52,12 @@ p {
 /* 聲音icon */
 #soundIcon {
   position: fixed;
+  padding: 10px;
   top: 85vh;
   right: 4%;
   z-index: 10;
+  border-radius: 50%;
+  border: #e0a866 solid 1.75px;
 }
 #soundIcon:hover {
   cursor: pointer;
