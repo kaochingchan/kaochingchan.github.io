@@ -36,15 +36,41 @@ function changeLoveIcon(anchor) {
   console.log(icon);
   icon.classList.toggle("fa-solid");
 }
+// classlist 在鑽研
 
-function triggerClick() {
-  $("#list_filter").on("click", function () {
-    console.log("1");
-    $("#fp-nav li:nth-child(2)").on("click", function () {});
-  });
+// function triggerClick() {
+//   $("#list_filter").on("click", function () {
+//     console.log("1");
+//     $("#fp-nav li:nth-child(2)").on("click", function () {});
+//   });
+// }
+
+// sound icon
+function changeSoundIcon(anchor) {
+  var icon2 = anchor.querySelector("i");
+  console.log(icon2);
+  icon2.classList.toggle("fa-volume-xmark");
+  icon2.classList.toggle("fa-volume-high");
 }
 
 // smooth scroll
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 800,
 });
+
+// audio play/toggle play audio
+var audio = new Audio("../audio/song-yumejis-theme-shigeru-umebayashi.mp3");
+var isPlaying = false;
+
+function togglePlay() {
+  // 條件運算子
+  isPlaying ? audio.pause() : audio.play();
+}
+// 播放(onplaying)時,isPlaying為true
+audio.onplaying = function () {
+  isPlaying = true;
+};
+// 暫停(onpause)時,isPlaying為false
+audio.onpause = function () {
+  isPlaying = false;
+};

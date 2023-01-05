@@ -49,6 +49,23 @@ p {
 .section {
   height: calc(100vh - 60px);
 }
+/* 聲音icon */
+#soundIcon {
+  position: fixed;
+  top: 85vh;
+  right: 4%;
+  z-index: 10;
+}
+#soundIcon:hover {
+  cursor: pointer;
+}
+.fa-volume-high {
+  color: #e0a866;
+}
+
+.fa-solid.fa-volume-xmark {
+  color: #271f1f;
+}
 
 /* 導覽列 */
 .nav {
