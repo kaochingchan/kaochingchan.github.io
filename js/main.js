@@ -43,3 +43,8 @@ function triggerClick() {
     $("#fp-nav li:nth-child(2)").on("click", function () {});
   });
 }
+
+// smooth scroll
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 800,
+});

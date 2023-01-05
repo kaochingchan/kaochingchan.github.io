@@ -40,14 +40,15 @@
 
   <body>
     <div class="nav">
-      <div class="logo">影癡俱樂部</div>
+      <a href="#banner"
+        ><div class="logo"><h2>影癡俱樂部</h2></div></a
+      >
       <div class="list" id="menu">
         <a href="#filter">
           <h2>場次查詢</h2>
         </a>
-
-        <h2>推片工具</h2>
-        <h2>焦點影評</h2>
+        <a href="#auto_selected"><h2>推片工具</h2></a>
+        <a href="#review"><h2>焦點影評</h2></a>
         <div id="nav_dash"></div>
         <h2>我的收藏清單</h2>
       </div>
@@ -287,13 +288,15 @@
           </div>
         </div>
       </div>
+
+      <div id="new_film_festival"></div>
     </div>
 
     <!-- js  -->
-    <script src="./js/server.js"></script>
     <script src="./js/jquery-3.6.1.min.js"></script>
     <script src="./js/node_modules/owl.carousel/dist/owl.carousel.js"></script>
     <script src="./js/node_modules/fullpage.js/dist/fullpage.js"></script>
+    <script src="./js/node_modules/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="./js/movie.js"></script>
   </body>
