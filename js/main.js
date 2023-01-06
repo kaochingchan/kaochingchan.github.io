@@ -74,3 +74,12 @@ audio.onplaying = function () {
 audio.onpause = function () {
   isPlaying = false;
 };
+
+// parallax scroll
+$("#banner").paroller({
+  factor: -0.5, // multiplier for scrolling speed and offset, +- values for direction control
+  factorLg: -0.8, // multiplier for scrolling speed and offset if window width is less than 1200px, +- values for direction control
+  type: "foreground", // background, foreground
+  direction: "vertical", // vertical, horizontal
+  transition: "translate 3s ease",
+});

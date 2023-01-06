@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "paroller.js": "^1.4.7",
     "smooth-scroll": "^16.1.3"
   }
 }

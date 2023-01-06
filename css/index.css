@@ -128,6 +128,11 @@ p {
   background-color: antiquewhite;
 }
 
+#banner {
+  overflow: hidden;
+  z-index: -2;
+}
+
 /* owl-carousel setting  */
 
 .owl-nav {
@@ -232,10 +237,11 @@ p {
 /*#region filter */
 
 #filter {
+  background: #ffffff;
   width: 100%;
-  height: calc(100vh - 60px);
+  height: 900px;
   padding: 5% 10%;
-  z-index: 4;
+  z-index: -1;
 }
 
 #city_select {
@@ -355,6 +361,7 @@ p {
   height: 100vh;
   padding: 10% 10% 7.5% 10%;
   flex-direction: row;
+  background-color: #ffffff;
 }
 #auto_selected .flex_set {
   width: 100%;
@@ -407,6 +414,7 @@ p {
   height: 100vh;
   width: 100%;
   padding: 7.5% 10% 5% 10%;
+  background-color: #ffffff;
 }
 .review_inner {
   display: flex;
@@ -578,6 +586,7 @@ p {
   width: 100%;
   height: auto;
   padding: 7.5% 0%;
+  z-index: -1;
 }
 #f_main_title {
   margin-left: 10%;
