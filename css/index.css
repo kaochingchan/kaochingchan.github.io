@@ -1,3 +1,4 @@
+/*#region Basic */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -69,7 +70,9 @@ p {
 .fa-solid.fa-volume-xmark {
   color: #271f1f;
 }
+/*#endregion*/
 
+/*#region NavBar */
 /* 導覽列 */
 .nav {
   background-color: #e0a866;
@@ -111,6 +114,8 @@ p {
   display: inline-block;
   line-height: 35px;
 }
+
+/*#endregion */
 
 /*#region banner */
 /* banner */
@@ -551,6 +556,9 @@ p {
 
 /*#endregion */
 
+/*#region js extension style  */
+
+/* fullpage.js setting  */
 #fp-nav ul li a span {
   background-color: #e0a866;
 }
@@ -562,3 +570,241 @@ p {
 .fp-watermark {
   display: none;
 }
+
+/*#endregion */
+
+/*#region film festival */
+#film_fes {
+  width: 100%;
+  height: auto;
+  padding: 7.5% 0%;
+}
+#f_main_title {
+  margin-left: 10%;
+  margin-bottom: 30px;
+}
+
+.film_full {
+  width: 100%;
+  height: 480px;
+  margin-bottom: 30px;
+  padding: 5% 10%;
+  display: flex;
+  flex-direction: column;
+}
+
+#film_fes h2,
+#film_fes h3 {
+  color: #ffffff;
+}
+
+.film_full h1 {
+  color: #ffffff;
+}
+.film_full div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fes_avatar {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background-color: #e0a866;
+  position: relative;
+}
+
+.fes_avatar::before {
+  content: "";
+  height: 90px;
+  width: 90px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: #e0a866 2px solid;
+  z-index: 3;
+}
+
+/* 策展人頭貼 */
+#fes_1 .fes_avatar {
+  background-image: url("../img/corgi_avatar.jpeg");
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+}
+
+#fes_2 .fes_avatar {
+  background-image: url("../img/samoyed_avatar.jpeg");
+  background-size: cover;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#fes_1 h1,
+#fes_2 h1 {
+  font-size: 40px;
+  position: relative;
+  z-index: 3;
+}
+
+#fes_1 h1::before {
+  content: "";
+  width: 450px;
+  height: 50px;
+  background-color: #e0a866;
+  position: absolute;
+  bottom: -20;
+  left: 0;
+  z-index: -1;
+}
+
+#fes_2 h1::before {
+  content: "";
+  width: 400px;
+  height: 50px;
+  background-color: #e0a866;
+  position: absolute;
+  bottom: -20;
+  right: 0;
+  z-index: -1;
+}
+
+/* 全寬大圖圖源 */
+#fes_1 {
+  background-image: url("../img/a_touch_of_zen.jpeg");
+  background-size: cover;
+  background-position: center;
+  /* title圖片對齊用 */
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+#fes_2 {
+  background-image: url("../img/milliennium_mambo_2.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+/*片單*/
+.film_list {
+  margin: auto;
+  height: 200px;
+  width: 80%;
+  justify-content: space-between;
+  margin-bottom: 230px;
+}
+
+.film_block {
+  width: 24%;
+  height: 100%;
+  background-color: #e0a866;
+  position: relative;
+  cursor: pointer;
+}
+
+.f_b_inner {
+  height: 100%;
+  width: 100%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.f_b_info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #e0a866;
+  width: 100%;
+  height: 90%;
+  z-index: -1;
+  transition: all 0.8s ease-in-out;
+  padding: 5%;
+  color: #ffffff;
+}
+.f_b_info p {
+  color: #ffffff;
+}
+
+.film_block:hover .f_b_info {
+  transform: translateY(200px);
+  transition: all 0.8s ease-in-out;
+}
+
+/*#region 策展片單 */
+/* 武俠策展片單 */
+#list_1 .film_block:first-child {
+  background-image: url("../img/a_touch_of_zen_2.jpeg");
+  background-size: cover;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+}
+
+#list_1 .film_block:nth-child(2) {
+  background-image: url("../img/dragon_inn.jpeg");
+  background-size: cover;
+  background-position: 70% center;
+  background-repeat: no-repeat;
+}
+
+#list_1 .film_block:nth-child(3) {
+  background-image: url("../img/raining_in_the_mountain.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#list_1 .film_block:nth-child(4) {
+  background-image: url("../img/hu_4.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* 文青策展片單 */
+#list_2 .film_block:first-child {
+  background-image: url("../img/chung_king_express.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#list_2 .film_block:nth-child(2) {
+  background-image: url("../img/yi_yi.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#list_2 .film_block:nth-child(3) {
+  background-image: url("../img/farewell_my_concubine.jpeg");
+  background-size: cover;
+  background-position: 80% center;
+  background-repeat: no-repeat;
+}
+
+#list_2 .film_block:nth-child(4) {
+  background-image: url("../img/blue_gate.jpeg");
+  background-size: cover;
+  background-position: 80% center;
+  background-repeat: no-repeat;
+}
+/*#endregion */
+
+/*#endregion */
