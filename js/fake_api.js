@@ -353,18 +353,140 @@ var randomMovieArray = [
     ],
     imdbRating: "6.9",
   },
+  {
+    Title: "潛行者",
+    Year: "1979",
+    Runtime: "162分鐘",
+    Genre: "Drama, Sci-Fi",
+    Director: "Andrei Tarkovsky",
+    Writer: "Arkadiy Strugatskiy, Boris Strugatskiy, Andrei Tarkovsky",
+    Actors: "Alisa Freyndlikh, Aleksandr Kaydanovskiy, Anatoliy Solonitsyn",
+    Plot: "A guide leads two men through an area known as the Zone to find a room that grants wishes.",
+    Language: "Russian",
+    Country: "Soviet Union",
+    Awards: "2 wins & 2 nominations",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BMDgwODNmMGItMDcwYi00OWZjLTgyZjAtMGYwMmI4N2Q0NmJmXkEyXkFqcGdeQXVyNzY1MTU0Njk@._V1_SX300.jpg",
+    Ratings: [
+      { Source: "Internet Movie Database", Value: "8.1/10" },
+      { Source: "Rotten Tomatoes", Value: "100%" },
+    ],
+    imdbRating: "8.1",
+  },
+  {
+    Title: "第七封印",
+    Year: "1957",
+    Runtime: "96分鐘",
+    Genre: "Drama, Fantasy",
+    Director: "Ingmar Bergman",
+    Writer: "Ingmar Bergman",
+    Actors: "Max von Sydow, Gunnar Björnstrand, Bengt Ekerot",
+    Plot: "A knight returning to Sweden after the Crusades seeks answers about life, death, and the existence of God as he plays chess against the Grim Reaper during the Black Plague.",
+    Language: "Swedish, Latin",
+    Country: "Sweden",
+    Awards: "10 wins & 2 nominations",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BOWM3MmE0OGYtOGVlNC00OWE1LTk5ZTAtYmUwMDIwM2ZlNWJiXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+    Ratings: [
+      { Source: "Internet Movie Database", Value: "8.1/10" },
+      { Source: "Rotten Tomatoes", Value: "93%" },
+      { Source: "Metacritic", Value: "88/100" },
+    ],
+    imdbRating: "8.1",
+  },
+  {
+    Title: "星際效應",
+    Year: "2014",
+    Runtime: "169分鐘",
+    Genre: "Adventure, Drama, Sci-Fi",
+    Director: "Christopher Nolan",
+    Writer: "Jonathan Nolan, Christopher Nolan",
+    Actors: "Matthew McConaughey, Anne Hathaway, Jessica Chastain",
+    Plot: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
+    Language: "English",
+    Country: "United States, United Kingdom, Canada",
+    Awards: "Won 1 Oscar. 44 wins & 148 nominations total",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    Ratings: [
+      { Source: "Internet Movie Database", Value: "8.6/10" },
+      { Source: "Rotten Tomatoes", Value: "73%" },
+      { Source: "Metacritic", Value: "74/100" },
+    ],
+    imdbRating: "8.6",
+  },
+  {
+    Title: "花火",
+    Year: "1997",
+    Runtime: "103分鐘",
+    Genre: "Crime, Drama, Romance",
+    Director: "北野武",
+    Writer: "北野武",
+    Actors: "北野武, 岸本加世子, 大杉漣",
+    Plot: "Nishi leaves the police in the face of harrowing personal and professional difficulties. Spiraling into depression, he makes questionable decisions.",
+    Language: "Japanese",
+    Country: "Japan",
+    Awards: "23 wins & 24 nominations",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BODk4MzE5NjgtN2ZhOS00YTdkLTg0YzktMmE1MTkxZmMyMWI2L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+    Ratings: [
+      { Source: "Internet Movie Database", Value: "7.7/10" },
+      { Source: "Rotten Tomatoes", Value: "96%" },
+    ],
+    imdbRating: "7.7",
+  },
+  {
+    Title: "驚魂記",
+    Year: "1960",
+    Runtime: "109分鐘",
+    Genre: "Horror, Mystery, Thriller",
+    Director: "Alfred Hitchcock",
+    Writer: "Joseph Stefano, Robert Bloch",
+    Actors: "Anthony Perkins, Janet Leigh, Vera Miles",
+    Plot: "A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run and checks into a remote motel run by a young man under the domination of his mother.",
+    Language: "English",
+    Country: "United States",
+    Awards: "Nominated for 4 Oscars. 7 wins & 14 nominations total",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BNTQwNDM1YzItNDAxZC00NWY2LTk0M2UtNDIwNWI5OGUyNWUxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    Ratings: [
+      { Source: "Internet Movie Database", Value: "8.5/10" },
+      { Source: "Rotten Tomatoes", Value: "96%" },
+      { Source: "Metacritic", Value: "97/100" },
+    ],
+    imdbRating: "8.5",
+  },
+  {
+    Title: "橡皮頭",
+    Year: "1977",
+    Runtime: "89分鐘",
+    Genre: "Fantasy, Horror",
+    Director: "David Lynch",
+    Writer: "David Lynch",
+    Actors: "Jack Nance, Charlotte Stewart, Allen Joseph",
+    Plot: "Henry Spencer tries to survive his industrial environment, his angry girlfriend, and the unbearable screams of his newly born mutant child.",
+    Language: "English",
+    Country: "United States",
+    Awards: "3 wins & 2 nominations",
+    Poster:
+      "https://m.media-amazon.com/images/M/MV5BMDExYzg5YjQtMzE0Yy00OWJjLThiZTctMWI5MzhjM2RmNjA4L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_SX300.jpg",
+    Ratings: [
+      { Source: "Internet Movie Database", Value: "7.3/10" },
+      { Source: "Rotten Tomatoes", Value: "90%" },
+      { Source: "Metacritic", Value: "87/100" },
+    ],
+    imdbRating: "7.3",
+  },
 ];
 
-// 先取出亂數n
-var randomOrig = Math.random() * randomMovieArray.length - 1;
-var randomNumber = Math.floor(randomOrig + 1);
-// 取randomArray中第n項
-var randomMovie = randomMovieArray[randomNumber];
-
 function autoSelected() {
-  console.log(randomMovie);
-
+  // 先取出亂數n
+  var randomOrig = Math.random() * randomMovieArray.length - 1;
+  var randomNumber = Math.floor(randomOrig + 1);
+  // 取randomArray中第n項
+  var randomMovie = randomMovieArray[randomNumber];
   var selectedImg = randomMovie.Poster;
+  console.log(randomMovie);
   $("#selected_poster").css("background-image", "url(" + selectedImg + ")");
   var output_temp =
     '<h1 id="output_t">' +
@@ -372,26 +494,32 @@ function autoSelected() {
     "</h1>" +
     '<div class="output-text">' +
     "<h2>導演</h2>" +
-    '<h2 id="output_dir">' +
+    '<h2 class="light" >' +
     randomMovie.Director +
     "</h2>" +
     "</div>" +
     '<div class="output-text">' +
     "<h2>主演</h2>" +
-    '<h2 id="output_str">' +
+    '<h2 class="light" >' +
     randomMovie.Actors +
     "</h2>" +
     "</div>" +
     '<div class="output-text">' +
     "<h2>片長</h2>" +
-    '<h2 id="output_min"> ' +
+    '<h2 class="light" > ' +
     randomMovie.Runtime +
     "</h2>" +
     "</div>" +
     '<div class="output-text">' +
     "<h2>年份</h2>" +
-    '<h2 id="output_yr">' +
+    '<h2 class="light">' +
     randomMovie.Year +
+    "</h2>" +
+    "</div>" +
+    '<div class="output-text">' +
+    "<h2>IMDB評分</h2>" +
+    '<h2 class="light">' +
+    randomMovie.imdbRating +
     "</h2>" +
     "</div>";
 
