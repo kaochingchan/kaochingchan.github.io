@@ -9,6 +9,10 @@ var randomMovieArray = [
   "0050613",
   "0085933",
   "0093389",
+  "0079944",
+  "0101765",
+  "0059592",
+  "0060959",
 ];
 // 先取出亂數n
 var randomOrig = Math.random() * randomMovieArray.length - 1;
