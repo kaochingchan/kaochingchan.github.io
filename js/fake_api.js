@@ -487,6 +487,7 @@ function autoSelected() {
   var randomMovie = randomMovieArray[randomNumber];
   var selectedImg = randomMovie.Poster;
   console.log(randomMovie);
+  $("#selected_poster").html("");
   $("#selected_poster").css("background-image", "url(" + selectedImg + ")");
   var output_temp =
     '<h1 id="output_t">' +
