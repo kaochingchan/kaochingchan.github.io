@@ -214,14 +214,36 @@
     </div>
     <!-- 自動選片 -->
     <div id="auto_selected">
-      <div class="flex_set">
-        <div id="selected_poster"></div>
-        <div class="selected_text">
+      <div id="selected_poster"></div>
+      <div class="selected_text">
+        <div class="selected_con">
           <div class="s_title_style">找不到想看的電影？</div>
           <h3 class="s_sub_style">那就是看看推片工具</h3>
-          <div id="selected_btn">
-            <h2>幫我推片</h2>
+
+          <!-- <h1 id="output_t">In the Mood For Love</h1>
+          <div class="output-text">
+            <h2>導演</h2>
+            <h2 id="output_dir">111</h2>
           </div>
+
+          <div class="output-text">
+            <h2>主演</h2>
+            <h2 id="output_str"></h2>
+          </div>
+
+          <div class="output-text">
+            <h2>片長</h2>
+            <h2 id="output_min"></h2>
+          </div>
+
+          <div class="output-text">
+            <h2>年份</h2>
+            <h2 id="output_yr"></h2>
+          </div> -->
+        </div>
+
+        <div id="selected_btn" onclick="autoSelected()">
+          <h2>幫我推片</h2>
         </div>
       </div>
     </div>
@@ -422,5 +444,6 @@
     <script src="./js/main.js"></script>
     <script src="./js/movie.js"></script>
     <script src="./js/parallax_scroll.js"></script>
+    <script src="./js/omdb_api.js"></script>
   </body>
 </html>
