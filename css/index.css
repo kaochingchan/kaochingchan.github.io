@@ -72,6 +72,80 @@ p {
 }
 /*#endregion*/
 
+/*#region Popup*/
+#introPop {
+  background: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+#introPop .flex_set {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+#popup {
+  width: 500px;
+  height: 650px;
+  background-color: #ffffff;
+}
+#popImg {
+  width: 500px;
+  height: 400px;
+  background-image: url("../img/citizen_kane.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+#popText {
+  text-align: center;
+  padding: 5%;
+}
+
+#popInput {
+  border: #271f1f 3px solid;
+  height: 40px;
+  width: 275px;
+  font-size: 20px;
+  padding: 5px;
+  display: inline-block;
+  margin-right: -3px;
+}
+
+#popBtn {
+  height: 40px;
+  width: 100px;
+  background-color: #271f1f;
+  color: #ffffff;
+  display: inline-block;
+}
+#popBtn h2 {
+  color: #ffffff;
+  text-align: center;
+  line-height: 40px;
+}
+#popC_btn {
+  border: #e0a866 2px solid;
+  width: 150px;
+  height: 50px;
+  margin: auto;
+  text-align: center;
+  line-height: 45px;
+}
+
+#popBtn:hover,
+#popC_btn:hover {
+  cursor: pointer;
+}
+#popC_btn:hover {
+  transform: scale(1.05);
+}
+
+/*#endregion */
+
 /*#region NavBar */
 /* 導覽列 */
 .nav {
@@ -630,6 +704,7 @@ p {
   height: auto;
   padding: 7.5% 0%;
   z-index: -1;
+  overflow: hidden;
 }
 #f_main_title {
   margin-left: 10%;

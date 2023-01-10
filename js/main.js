@@ -1,3 +1,9 @@
+gsap.from("#introPop", {
+  opacity: 0,
+  duration: 1,
+  ease: Linear.easeNone,
+});
+
 // owl-carousel
 $(".owl-carousel").owlCarousel({
   loop: true,
@@ -100,4 +106,13 @@ $("#selected_poster").each(function () {
     slideImgs.eq(nextIndex).fadeIn();
     currentIndex = nextIndex;
   }
+});
+
+$("#popC_btn,#popBtn").on("click", function () {
+  gsap.to("#introPop", {
+    opacity: 0,
+    duration: 0.5,
+    ease: Linear.easeNone,
+    display: "none",
+  });
 });
