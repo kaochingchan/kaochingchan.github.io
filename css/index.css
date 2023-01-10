@@ -696,6 +696,7 @@ p {
 
 /*#endregion */
 
+/*#region film fes */
 #film_fes {
   width: 100%;
   height: auto;
@@ -928,7 +929,9 @@ p {
   background-position: 80% center;
   background-repeat: no-repeat;
 }
+/*#endregion */
 
+/*#region footer */
 #footer {
   width: 100%;
   height: auto;
@@ -970,3 +973,4 @@ p {
   font-size: 24px;
   margin-left: 10px;
 }
+/*#endregion */
