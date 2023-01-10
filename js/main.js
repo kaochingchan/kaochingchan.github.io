@@ -1,9 +1,3 @@
-gsap.from("#introPop", {
-  opacity: 0,
-  duration: 1,
-  ease: Linear.easeNone,
-});
-
 // owl-carousel
 $(".owl-carousel").owlCarousel({
   loop: true,
